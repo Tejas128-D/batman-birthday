@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For David</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- PAGE 1 -->
+<div id="page1">
+  <img src="assets/logo.png" id="logo" alt="Batman Logo">
+  <p class="entry-text">
+    Batman doesn’t celebrate birthdays.<br>
+    But today… it breaks the rule.
+  </p>
+</div>
+
+<!-- PAGE 2 -->
+<div id="page2">
+
+  <h1 class="title">
+    HAPPY BIRTHDAY<br>
+    BRO DAVID 🦇
+  </h1>
+
+  <div class="photos">
+    <img src="assets/tejas.jpeg">
+    <img src="assets/david.jpeg">
+  </div>
+
+  <p class="line">
+    Not by blood.<br>
+    Not by name.<br>
+    But by loyalty — <b>BRO</b>.
+  </p>
+
+  <p class="final">
+    Wherever life takes us,<br>
+    you’ll always have someone watching your back.<br><br>
+    Have a legendary year.<br>
+    — Your Bro 🖤
+  </p>
+
+</div>
+
+<audio id="music" src="assets/batman%20song.mp3"></audio>
+
+<script>
+  document.getElementById("logo").onclick = function () {
+    document.getElementById("page1").style.display = "none";
+    document.getElementById("page2").style.display = "flex";
+    document.getElementById("music").play();
+  };
+</script>
+
+</body>
+</html>
