@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: white;
+  background: black;
+}
+
+/* ================= PAGE 1 ================= */
+
+#page1 {
+  height: 100vh;
+  background: url("assets/background.jpg") center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* LOGO – CLEAN, NO BOX */
+#logo {
+  width: 120px;
+  cursor: pointer;
+  margin-bottom: 18px;
+  animation: breathe 3s ease-in-out infinite;
+}
+
+/* ENTRY TEXT */
+.entry-text {
+  font-size: 16px;
+  color: #ccc;
+  line-height: 1.5;
+}
+
+/* ================= PAGE 2 ================= */
+
+#page2 {
+  display: none;
+  min-height: 100vh;
+  background: url("assets/background%202.png") center/cover no-repeat;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 60px 10px;
+}
+
+/* TITLE */
+.title {
+  font-size: 42px;
+  margin-bottom: 30px;
+}
+
+/* PHOTOS – BIGGER & TOUCHING EDGES */
+.photos img {
+  width: 48%;
+  height: auto;              /* 🔥 no forced crop */
+  max-height: 320px;         /* big but safe */
+  object-fit: contain;       /* 🔥 show full photo */
+  filter: grayscale(100%) contrast(110%);
+}
+
+
+.photos img {
+  width: 48%;
+  height: 360px;          /* 🔥 SAME HEIGHT */
+  object-fit: cover;     /* 🔥 fills evenly */
+}
+
+
+
+/* TEXT */
+.line {
+  color: #fff;           /* 🔥 WHITE */
+  font-size: 22px;
+  margin-bottom: 26px;
+}
+
+.final {
+  color: #eee;           /* 🔥 SOFT WHITE */
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+
+
+/* BREATHING */
+@keyframes breathe {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+  100% { transform: scale(1); }
+}
